@@ -3,8 +3,9 @@ $color-primary: #490505;
 $color-primary-dark: #550202;
 
 $color-secondary: #990606;
+$color-secondary-1: #101d2c;
 
-$color-grey-light-1: #f9f7f6;
+$color-grey-light-1: #dd6749;
 $color-grey-light-2: #aaa;
 
 $color-grey-dark-1: #ee8585;
@@ -29,7 +30,15 @@ html{
 
 body{
     font-family: $font-primary;
-    color: $color-grey-dark-2;
+    color: $color-grey-light-2;
     font-weight: 300;
     line-height: 1.6;
+}
+.container{
+    display: grid;
+
+
+    grid-template-rows: 10vh 80vh min-content 40vw repeat(3, min-content);
+    // grid-template-columns: 8rem 1fr repeat(8, minmax(min-content, 14rem)) 1fr;
+    grid-template-columns: [full-start] 1fr [center-start]repeat(8, [col-start]minmax(min-content, 14rem)[col-end])[center-end] 1fr[full-end];
 }

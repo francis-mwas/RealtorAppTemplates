@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #aaa;
+  font-weight: 300;
+  line-height: 1.6; }
+
+.container {
+  display: grid;
+  grid-template-rows: 10vh 80vh min-content 40vw repeat(3, min-content);
+  grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end]; }
+
+.header {
+  background-color: #550202;
+  grid-column: full-start / full-end; }
+
+.banner {
+  background-color: #490505;
+  grid-column: full-start / full-end; }
+
+.homes {
+  background-color: #990606;
+  grid-column: center-start /center-end; }
+
+.services {
+  background-color: #990606;
+  grid-column: full-start / full-end; }
+
+.testimonials {
+  background-color: #dd6749;
+  grid-column: center-start / center-end; }
+
+.gallery {
+  background-color: #490505;
+  grid-column: full-start / full-end; }
+
+.footer {
+  background-color: #101d2c;
+  grid-column: full-start / full-end; }
