@@ -1,0 +1,35 @@
+// COLOR VARIABLES 
+$color-primary: #490505;
+$color-primary-dark: #550202;
+
+$color-secondary: #990606;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+
+$color-grey-dark-1: #ee8585;
+$color-grey-dark-2: #f15f5f;
+
+// FONTS VARIBLES 
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    font-family: $font-primary;
+    color: $color-grey-dark-2;
+    font-weight: 300;
+    line-height: 1.6;
+}
