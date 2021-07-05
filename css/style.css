@@ -26,6 +26,9 @@ body {
 
 .banner {
   background-color: #490505;
+  background-image: url(../img/hero1.jpg);
+  background-size: cover;
+  background-position: center;
   grid-column: full-start / full-end; }
 
 .homes {
