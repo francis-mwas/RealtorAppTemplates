@@ -53,6 +53,21 @@ body {
   background-color: #550202;
   grid-column: full-start / full-end; }
 
+.nav {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(6, 10rem);
+  justify-content: end;
+  justify-items: center;
+  gap: 1rem; }
+  .nav__logo--img {
+    width: 20rem;
+    height: 15rem; }
+  .nav__link:link, .nav__link:visited {
+    font-size: 1.8rem;
+    color: whitesmoke;
+    text-decoration: none; }
+
 .banner {
   background-color: #490505;
   background-image: url(../img/hero.jpeg);

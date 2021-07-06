@@ -1,5 +1,33 @@
 .header{
     background-color: $color-primary-dark;
 
-    grid-column: full-start / full-end;
+    grid-column: full-start / full-end;    
+}
+
+.nav{
+    list-style: none;
+    display: grid;
+
+    grid-template-columns: repeat(6,  10rem);
+    justify-content: end;
+    justify-items: center;
+    gap: 1rem;
+
+    &__logo{
+       
+
+        &--img{
+            width: 20rem;
+            height: 15rem;
+        }
+    }
+
+
+    &__link:link,
+    &__link:visited{
+        font-size: 1.8rem;
+        color: $font-color-1;
+        text-decoration: none;
+    }
+
 }
