@@ -1,3 +1,32 @@
+h1 {
+  font-size: 2.4em;
+  line-height: 1;
+  margin-bottom: 0.5em; }
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 0.75em; }
+
+h3 {
+  font-size: 1.5em;
+  line-height: 1;
+  margin-bottom: 1em; }
+
+h4 {
+  font-size: 1.2em;
+  line-height: 1.25;
+  margin-bottom: 1.25em; }
+
+h5 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 1.5em; }
+
+h6 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 1.5em; }
+
 *,
 *::after,
 *::before {
@@ -26,7 +55,7 @@ body {
 
 .banner {
   background-color: #490505;
-  background-image: url(../img/hero1.jpg);
+  background-image: url(../img/hero.jpeg);
   background-size: cover;
   background-position: center;
   grid-column: full-start / full-end;
@@ -35,17 +64,32 @@ body {
   grid-template-rows: repeat(10, 1fr);
   align-items: center; }
   .banner__hero {
-    background-color: rgba(0, 0, 0, 0.5);
-    grid-column: 5 / 8;
+    background-color: rgba(73, 5, 5, 0.4);
+    grid-column: 4 / 8;
     grid-row: 4 / 6;
     padding: 2rem 1rem;
     text-align: center;
-    text-transform: capitalize; }
-  .banner__heading {
-    font-size: 2.5rem; }
-  .banner__paragraph {
-    font-size: 1.2rem;
-    margin-bottom: 2rem; }
+    text-transform: capitalize;
+    letter-spacing: .3rem;
+    color: whitesmoke;
+    transition: all .3s; }
+  .banner__text {
+    font-size: 2.2rem;
+    margin-bottom: 1.2rem;
+    font-weight: 400; }
+  .banner__btn {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: .5rem .9rem;
+    border: 3px solid #ee8585;
+    display: inline-block;
+    font-size: 1.8rem;
+    color: currentColor;
+    background: #ee8585;
+    transition: all .3s; }
+  .banner__btn:hover {
+    background: transparent;
+    color: whitesmoke; }
 
 .homes {
   background-color: #990606;

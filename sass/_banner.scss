@@ -1,6 +1,6 @@
 .banner{
     background-color: $color-primary;
-    background-image: url(../img/hero1.jpg);
+    background-image: url(../img/hero.jpeg);
     background-size: cover;
     background-position: center;
     grid-column: full-start / full-end;
@@ -12,19 +12,35 @@
     
 
     &__hero{
-        background-color:rgba(0,0,0,.5);
-        grid-column: 5 / 8;
+        background-color:rgba($color-primary,.4);
+        grid-column: 4 / 8;
         grid-row: 4 / 6;
         padding: 2rem 1rem;
         text-align: center;
         text-transform: capitalize;
+        letter-spacing: .3rem;
+        color: whitesmoke;
+        transition: all .3s;
     }
-   &__heading{
-       font-size: 2.5rem;
-   }
-   &__paragraph {
-        font-size: 1.2rem;
-        margin-bottom: 2rem;
+   &__text {
+        font-size: 2.2rem;
+        margin-bottom: 1.2rem;
+        font-weight: 400;
     }
+  &__btn{
+      text-transform: uppercase;
+      text-decoration: none;
+      padding:  .5rem .9rem;
+      border: 3px solid $color-grey-dark-1;
+      display: inline-block;
+      font-size: 1.8rem;
+      color: currentColor;
+      background: $color-grey-dark-1;
+      transition: all .3s;
+  }
+  &__btn:hover{
+      background: transparent;
+      color: whitesmoke;
+  }
 }
 
