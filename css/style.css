@@ -39,10 +39,10 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: "Nunito", sans-serif;
-  color: #aaa;
-  font-weight: 300;
-  line-height: 1.6; }
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  /*font-size: 16px;*/
+  line-height: 1.7; }
 
 .container {
   display: grid;
@@ -50,8 +50,44 @@ body {
   grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end]; }
 
 .header {
-  background-color: #550202;
-  grid-column: full-start / full-end; }
+  background-color: rgba(238, 133, 133, 0.1);
+  z-index: 100;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  grid-column: full-start / full-end;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 2.5em;
+  padding: 0 40px; }
+  .header__logo {
+    display: grid;
+    justify-content: start;
+    align-content: center; }
+    .header__logo--img {
+      height: 6rem;
+      margin-left: 2rem;
+      transition: all .2s; }
+    .header__logo--img:hover {
+      transform: scale(1.1); }
+  .header__nav {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: right;
+    align-content: center;
+    grid-gap: 3rem;
+    list-style: none; }
+    .header__nav--link:link, .header__nav--link:visited {
+      color: #af9a7d;
+      text-decoration: none; }
+    .header__nav--link-1:active {
+      background-color: #ee8585; }
+    .header__nav--link:hover {
+      color: #990606; }
+  .header__item {
+    font-size: 1.8rem;
+    font-weight: 700;
+    transition: all .2s; }
+  .header__item:hover {
+    transform: scale(1.1); }
 
 .banner {
   background-color: #490505;
