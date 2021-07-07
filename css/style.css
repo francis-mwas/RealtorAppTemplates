@@ -42,7 +42,8 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   /*font-size: 16px;*/
-  line-height: 1.7; }
+  line-height: 1.7;
+  background-color: #D7D7D7; }
 
 .container {
   display: grid;
@@ -128,8 +129,13 @@ body {
     color: whitesmoke; }
 
 .homes {
-  background-color: #990606;
-  grid-column: center-start /center-end; }
+  grid-column: center-start /center-end;
+  width: 90vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  grid-row-gap: 2rem;
+  grid-column-gap: 50px; }
 
 .services {
   background-color: #990606;
