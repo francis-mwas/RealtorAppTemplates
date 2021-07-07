@@ -8,9 +8,11 @@ $color-secondary-1: #101d2c;
 
 $color-grey-light-1: #dd6749;
 $color-grey-light-2: #aaa;
+$color-grey-1: #D7D7D7;
 
 $color-grey-dark-1: #ee8585;
 $color-grey-dark-2: #f15f5f;
+$brown-light-1: #e97451;
 
 // FONTS VARIBLES 
 $font-primary: 'Nunito', sans-serif;
@@ -63,10 +65,15 @@ html{
 }
 
 body{
-    font-family: $font-primary;
-    color: $color-grey-light-2;
-    font-weight: 300;
-    line-height: 1.6;
+    // font-family: $font-primary;
+    // color: $color-grey-light-2;
+    // font-weight: 300;
+    // line-height: 1.6;
+
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    /*font-size: 16px;*/
+    line-height: 1.7;
 }
 .container{
     display: grid;
