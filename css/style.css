@@ -4,8 +4,7 @@ h1 {
   margin-bottom: 0.5em; }
 
 h2 {
-  font-size: 2em;
-  margin-bottom: 0.75em; }
+  font-size: 2em; }
 
 h3 {
   font-size: 1.5em;
@@ -42,8 +41,7 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   /*font-size: 16px;*/
-  line-height: 1.7;
-  background-color: #D7D7D7; }
+  line-height: 1.7; }
 
 .container {
   display: grid;
@@ -130,12 +128,47 @@ body {
 
 .homes {
   grid-column: center-start /center-end;
-  width: 90vw;
-  margin: 0 auto;
+  padding: 10rem 0;
+  text-align: center; }
+
+.card {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   grid-row-gap: 2rem;
   grid-column-gap: 50px; }
+  .card__icon {
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 2rem;
+    fill: #990606;
+    transition: all .3s; }
+  .card__icon:hover {
+    transform: translateY(-1.2rem) scale(1.03); }
+  .card__content {
+    width: auto; }
+  .card__heading-4 {
+    font-size: 1.9rem;
+    color: #ee8585; }
+  .card__text {
+    font-size: 1.7rem;
+    font-weight: 300; }
+
+.section-title {
+  text-align: center;
+  margin-bottom: 5rem; }
+
+.title__text h2 {
+  font-size: 2.5rem;
+  letter-spacing: .5rem;
+  text-transform: capitalize;
+  color: #990606;
+  font-weight: 700; }
+
+.under-line {
+  width: 7rem;
+  height: .5rem;
+  background-color: #ee8585;
+  margin: 0 auto; }
 
 .services {
   background-color: #990606;

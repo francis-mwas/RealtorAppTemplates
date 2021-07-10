@@ -28,7 +28,7 @@ h1 {
 }
 h2 {
   font-size: 2em;
-  margin-bottom: 0.75em;
+  // margin-bottom: 0.75em;
 }
 h3 {
   font-size: 1.5em;
@@ -74,7 +74,6 @@ body{
     font-weight: 400;
     /*font-size: 16px;*/
     line-height: 1.7;
-    background-color: $color-grey-1;
 }
 .container{
     display: grid;
