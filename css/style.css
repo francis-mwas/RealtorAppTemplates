@@ -4,8 +4,7 @@ h1 {
   margin-bottom: 0.5em; }
 
 h2 {
-  font-size: 2em;
-  margin-bottom: 0.75em; }
+  font-size: 2em; }
 
 h3 {
   font-size: 1.5em;
@@ -127,11 +126,51 @@ body {
     background: transparent;
     color: whitesmoke; }
 
-.homes {
-  background-color: #990606;
-  grid-column: center-start /center-end; }
-
 .services {
+  grid-column: center-start /center-end;
+  padding: 10rem 0;
+  text-align: center; }
+
+.service {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 2rem;
+  grid-column-gap: 50px; }
+  .service__icon {
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 2rem;
+    fill: #990606;
+    transition: all .3s; }
+  .service__icon:hover {
+    transform: translateY(-1.2rem) scale(1.03); }
+  .service__content {
+    width: auto; }
+  .service__heading-4 {
+    font-size: 1.9rem;
+    color: #ee8585; }
+  .service__text {
+    font-size: 1.7rem;
+    font-weight: 300; }
+
+.section-title {
+  text-align: center;
+  margin-bottom: 5rem; }
+
+.title__text h2 {
+  font-size: 2.5rem;
+  letter-spacing: .5rem;
+  text-transform: capitalize;
+  color: #990606;
+  font-weight: 700; }
+
+.under-line {
+  width: 7rem;
+  height: .5rem;
+  background-color: #ee8585;
+  margin: 0 auto; }
+
+.apartments {
   background-color: #990606;
   grid-column: full-start / full-end; }
 
