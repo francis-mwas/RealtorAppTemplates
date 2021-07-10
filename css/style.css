@@ -126,30 +126,30 @@ body {
     background: transparent;
     color: whitesmoke; }
 
-.homes {
+.services {
   grid-column: center-start /center-end;
   padding: 10rem 0;
   text-align: center; }
 
-.card {
+.service {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-row-gap: 2rem;
   grid-column-gap: 50px; }
-  .card__icon {
+  .service__icon {
     width: 5rem;
     height: 5rem;
     margin-bottom: 2rem;
     fill: #990606;
     transition: all .3s; }
-  .card__icon:hover {
+  .service__icon:hover {
     transform: translateY(-1.2rem) scale(1.03); }
-  .card__content {
+  .service__content {
     width: auto; }
-  .card__heading-4 {
+  .service__heading-4 {
     font-size: 1.9rem;
     color: #ee8585; }
-  .card__text {
+  .service__text {
     font-size: 1.7rem;
     font-weight: 300; }
 
@@ -170,7 +170,7 @@ body {
   background-color: #ee8585;
   margin: 0 auto; }
 
-.services {
+.apartments {
   background-color: #990606;
   grid-column: full-start / full-end; }
 
