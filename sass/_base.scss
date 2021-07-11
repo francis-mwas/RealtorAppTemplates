@@ -13,6 +13,11 @@ $color-grey-1: #D7D7D7;
 $color-grey-dark-1: #ee8585;
 $color-grey-dark-2: #f15f5f;
 $brown-light-1: #e97451;
+$tertiary-color: #f9f7f6;
+
+// Global styling 
+$sections-padding: 10rem 0;
+$color-black: #000;
 
 // FONTS VARIBLES 
 $font-primary: 'Nunito', sans-serif;
@@ -34,11 +39,6 @@ h3 {
   font-size: 1.5em;
   line-height: 1;
   margin-bottom: 1em;
-}
-h4 {
-  font-size: 1.2em;
-  line-height: 1.25;
-  margin-bottom: 1.25em;
 }
 h5 {
   font-size: 1em;
@@ -79,7 +79,7 @@ body{
     display: grid;
 
 
-    grid-template-rows: 10vh 80vh min-content 40vw repeat(3, min-content);
+    grid-template-rows: 10vh 80vh min-content min-content repeat(3, min-content);
     // grid-template-columns: 8rem 1fr repeat(8, minmax(min-content, 14rem)) 1fr;
     grid-template-columns: [full-start] 1fr [center-start]repeat(8, [col-start]minmax(min-content, 14rem)[col-end])[center-end] 1fr[full-end];
 }
