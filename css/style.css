@@ -11,11 +11,6 @@ h3 {
   line-height: 1;
   margin-bottom: 1em; }
 
-h4 {
-  font-size: 1.2em;
-  line-height: 1.25;
-  margin-bottom: 1.25em; }
-
 h5 {
   font-size: 1em;
   font-weight: bold;
@@ -168,6 +163,14 @@ body {
   background-color: #ee8585;
   margin: 0 auto; }
 
+.apartment__price, .apartment__rooms, .apartment__location {
+  font-size: 1.4rem;
+  margin: 0 1rem;
+  color: #990606; }
+
+.apartment__rooms .left, .apartment__location .left, .apartment__price .left {
+  float: right; }
+
 .apartments {
   background-color: #f9f7f6;
   grid-column: full-start / full-end;
@@ -185,25 +188,41 @@ body {
   grid-gap: 3rem; }
 
 .apartment {
-  background-color: #fff; }
+  background-color: #fff;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  border-radius: .5rem;
+  overflow: hidden;
+  transition: all .3s;
+  border: 1px solid #D7D7D7; }
   .apartment__img {
     width: 100%; }
   .apartment__title {
-    background-color: #ee8585;
+    background-color: #990606;
     padding: 1.25rem;
     font-size: 1.6rem;
     text-align: center;
-    color: #ee8585;
-    transform: translateY(-79%); }
-  .apartment__price {
-    font-size: 1.2rem;
+    margin: 0 3rem;
+    color: whitesmoke;
+    transform: translateY(-63%);
+    font-family: "Josefin Sans", sans-serif; }
+  .apartment__rooms {
+    padding-bottom: 1rem; }
+  .apartment__rooms .rooms_back {
+    width: 20%;
+    height: 20%;
     text-align: center;
-    color: #ee8585; }
+    background-color: #990606;
+    padding: .5rem;
+    border-radius: 12%;
+    color: whitesmoke; }
   .apartment__text {
     font-size: 1.6rem;
     text-align: center;
     margin: 1.1rem;
     font-weight: 300; }
+
+.apartment:hover {
+  transform: translateY(-1.1rem) scale(1.01); }
 
 .testimonials {
   background-color: #dd6749;
