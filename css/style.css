@@ -45,7 +45,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 10vh 80vh min-content 40vw repeat(3, min-content);
+  grid-template-rows: 10vh 80vh min-content min-content repeat(3, min-content);
   grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end]; }
 
 .header {
@@ -127,15 +127,15 @@ body {
     color: whitesmoke; }
 
 .services {
-  grid-column: center-start /center-end;
+  grid-column: center-start / center-end;
   padding: 10rem 0;
   text-align: center; }
 
 .service {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-row-gap: 2rem;
-  grid-column-gap: 50px; }
+  grid-column-gap: 3rem; }
   .service__icon {
     width: 5rem;
     height: 5rem;
@@ -144,8 +144,6 @@ body {
     transition: all .3s; }
   .service__icon:hover {
     transform: translateY(-1.2rem) scale(1.03); }
-  .service__content {
-    width: auto; }
   .service__heading-4 {
     font-size: 1.9rem;
     color: #ee8585; }
@@ -171,8 +169,41 @@ body {
   margin: 0 auto; }
 
 .apartments {
-  background-color: #990606;
-  grid-column: full-start / full-end; }
+  background-color: #f9f7f6;
+  grid-column: full-start / full-end;
+  display: grid;
+  grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end]; }
+
+.innner-container {
+  grid-column: center-start / center-end;
+  padding: 10rem 0;
+  margin-bottom: 3rem; }
+
+.inner-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  grid-gap: 3rem; }
+
+.apartment {
+  background-color: #fff; }
+  .apartment__img {
+    width: 100%; }
+  .apartment__title {
+    background-color: #ee8585;
+    padding: 1.25rem;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #ee8585;
+    transform: translateY(-79%); }
+  .apartment__price {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #ee8585; }
+  .apartment__text {
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 1.1rem;
+    font-weight: 300; }
 
 .testimonials {
   background-color: #dd6749;
