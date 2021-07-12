@@ -1,7 +1,8 @@
-.gallery {
-    // background-color: $color-primary;
+.gallery{
+    background-color: $color-primary;
 
     grid-column: full-start / full-end;
+
 
     display: grid;
     grid-template: repeat(7, 5vw) / repeat(8, 1fr);
@@ -91,3 +92,4 @@
         object-fit: cover;
     }
 }
+
