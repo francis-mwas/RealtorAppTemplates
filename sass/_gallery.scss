@@ -1,5 +1,5 @@
-.gallery{
-    background-color: $color-primary;
+.gallery {
+    // background-color: $color-primary;
 
     grid-column: full-start / full-end;
 
@@ -92,4 +92,3 @@
         object-fit: cover;
     }
 }
-
