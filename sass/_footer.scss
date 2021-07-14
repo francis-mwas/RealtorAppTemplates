@@ -2,4 +2,15 @@
     background-color: $color-secondary-1;
 
     grid-column: full-start / full-end;
+    display: grid;
+    grid-template-columns: [full-start] 1fr [center-start]repeat(8, [col-start]minmax(min-content, 14rem)[col-end])[center-end] 1fr[full-end];
+    grid-gap: 3rem;
+
+    &__content{
+         grid-column: center-start / center-end;
+
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(30rem , 1fr));
+         grid-gap: 3rem;
+    }
 }
