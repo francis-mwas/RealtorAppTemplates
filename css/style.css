@@ -354,6 +354,10 @@ h6 {
     list-style: none;
     text-decoration: none;
     transition: all .3s; }
+  .footer__underline {
+    margin-bottom: 3rem;
+    background: whitesmoke;
+    width: 10rem; }
   .footer__item {
     font-size: 1.6rem;
     font-weight: 700;
@@ -370,7 +374,7 @@ h6 {
   .footer__header--text {
     font-size: 1.8rem;
     text-align: center;
-    padding-bottom: 4rem; }
+    padding-bottom: 1rem; }
   .footer__social--icons {
     text-align: center;
     transition: all .3s; }
