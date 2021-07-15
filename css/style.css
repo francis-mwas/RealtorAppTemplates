@@ -33,11 +33,6 @@ h3 {
   line-height: 1;
   margin-bottom: 1em; }
 
-h5 {
-  font-size: 1em;
-  font-weight: bold;
-  margin-bottom: 1.5em; }
-
 h6 {
   font-size: 1em;
   font-weight: bold;
@@ -333,6 +328,7 @@ h6 {
 
 .footer {
   background-color: #101d2c;
+  padding: 5rem;
   grid-column: full-start / full-end;
   display: grid;
   grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end];
@@ -342,3 +338,58 @@ h6 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     grid-gap: 3rem; }
+  .footer__card {
+    color: whitesmoke; }
+  .footer__logo--img {
+    height: 17rem; }
+  .footer__text {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 3rem; }
+  .footer__copyright {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 3rem; }
+  .footer__items {
+    list-style: none;
+    text-decoration: none;
+    transition: all .3s; }
+  .footer__item {
+    font-size: 1.6rem;
+    font-weight: 700;
+    transition: all .3s;
+    margin-bottom: 1.2rem;
+    text-align: center; }
+    .footer__item--link:link, .footer__item--link:visited {
+      color: whitesmoke;
+      text-decoration: none; }
+  .footer__item:hover {
+    transform: scale(1.1); }
+  .footer__item--link {
+    padding: 3rem; }
+  .footer__header--text {
+    font-size: 1.8rem;
+    text-align: center;
+    padding-bottom: 4rem; }
+  .footer__social--icons {
+    text-align: center;
+    transition: all .3s; }
+  .footer__icon {
+    width: 7rem;
+    height: 7rem;
+    display: inline-block;
+    transition: all .3s;
+    padding: 1.6rem;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    margin-left: 1rem; }
+    .footer__icon--link {
+      width: 4rem;
+      height: 3rem;
+      fill: #101d2c; }
+  .footer__icon:hover {
+    background-color: #101d2c;
+    color: whitesmoke;
+    transform: translateY(-1.2rem) scale(1.03); }
+  .footer__icon:hover .footer__icon--link {
+    fill: whitesmoke; }
