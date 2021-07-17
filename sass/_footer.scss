@@ -11,7 +11,7 @@
         grid-column: center-start / center-end;
 
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
         grid-gap: 3rem;
     }
 
@@ -78,6 +78,8 @@
     &__social--icons {
         text-align: center;
         transition: all .3s;
+
+
     }
 
     &__icon {
@@ -89,6 +91,16 @@
         background-color: $font-color-1;
         border-radius: 50%;
         margin-left: 1rem;
+
+        @media only screen and (max-width: $bp-small) {
+            width: 8rem;
+            height: 8rem;
+            display: block;
+            text-align: center;
+            padding: 2.3rem;
+            margin: auto;
+            margin-bottom: 2rem;
+        }
 
         &--link {
             width: 4rem;
