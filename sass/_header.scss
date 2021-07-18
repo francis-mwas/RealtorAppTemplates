@@ -31,11 +31,9 @@
             @media only screen and (max-width: $bp-small) {
                 height: 10rem;
                 margin-left: 1rem;
-                margin-bottom: 4rem;
+                margin-bottom: 6rem;
             }
-             @media only screen and (max-width: $bp-smallest) {
-                   margin-bottom: 5rem;
-             }
+
         }
 
         &--img:hover {
@@ -56,12 +54,13 @@
             align-self: center;
             justify-self: center;
             grid-column: 3 / -1;
+            grid-auto-flow: row;
 
         }
 
-        @media only screen and (max-width: $bp-smallest) {
-              grid-auto-flow: row;
-        }
+        // @media only screen and (max-width: $bp-smallest) {
+        //       grid-auto-flow: row;
+        // }
 
 
 

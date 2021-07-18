@@ -72,10 +72,10 @@ body {
     }
 
     @media only screen and (max-width: $bp-small) {
-        grid-template-rows: 35vh 60vh min-content min-content repeat(3, min-content);
+        grid-template-rows: 45vh 60vh min-content min-content repeat(3, min-content);
     }
 
-    @media only screen and (max-width: $bp-smallest) {
-        grid-template-rows: 42vh 60vh min-content min-content repeat(3, min-content);
-    }
+    // @media only screen and (max-width: $bp-smallest) {
+    //     grid-template-rows: 42vh 60vh min-content min-content repeat(3, min-content);
+    // }
 }

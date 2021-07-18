@@ -24,10 +24,7 @@ body {
       grid-template-rows: 30vh 60vh min-content min-content repeat(3, min-content); } }
   @media only screen and (max-width: 37.5em) {
     .container {
-      grid-template-rows: 35vh 60vh min-content min-content repeat(3, min-content); } }
-  @media only screen and (max-width: 31.25em) {
-    .container {
-      grid-template-rows: 42vh 60vh min-content min-content repeat(3, min-content); } }
+      grid-template-rows: 45vh 60vh min-content min-content repeat(3, min-content); } }
 
 h1 {
   font-size: 2.4em;
@@ -73,10 +70,7 @@ h6 {
         .header__logo--img {
           height: 10rem;
           margin-left: 1rem;
-          margin-bottom: 4rem; } }
-      @media only screen and (max-width: 31.25em) {
-        .header__logo--img {
-          margin-bottom: 5rem; } }
+          margin-bottom: 6rem; } }
     .header__logo--img:hover {
       transform: scale(1.1); }
   .header__nav {
@@ -90,9 +84,7 @@ h6 {
       .header__nav {
         align-self: center;
         justify-self: center;
-        grid-column: 3 / -1; } }
-    @media only screen and (max-width: 31.25em) {
-      .header__nav {
+        grid-column: 3 / -1;
         grid-auto-flow: row; } }
     .header__nav--link:link, .header__nav--link:visited {
       color: #af9a7d;
