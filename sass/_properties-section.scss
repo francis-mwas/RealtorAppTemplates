@@ -1,0 +1,19 @@
+.properties-section {
+    background-color: $color-grey-dark-2;
+    padding: 5rem;
+
+    grid-column: full-start / full-end;
+
+    display: grid;
+    grid-template-columns: [full-start] 1fr [center-start]repeat(8, [col-start]minmax(min-content, 14rem)[col-end])[center-end] 1fr[full-end];
+}
+.properties{
+    &__aside {
+        background-color: $color-primary-2;
+        grid-column: full-start / col-start;
+    }
+    &__main-section{
+        background-color: $color-grey-1;
+        grid-column: col-start / full-end;
+    }
+}

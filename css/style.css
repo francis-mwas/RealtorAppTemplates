@@ -17,7 +17,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 10vh 80vh min-content min-content repeat(3, min-content);
+  grid-template-rows: 10vh 100vh min-content min-content repeat(3, min-content);
   grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end]; }
   @media only screen and (max-width: 50em) {
     .container {
@@ -25,6 +25,11 @@ body {
   @media only screen and (max-width: 37.5em) {
     .container {
       grid-template-rows: 45vh 60vh min-content min-content repeat(3, min-content); } }
+
+.properties-container {
+  display: grid;
+  grid-template-rows: 10vh 50vh min-content min-content repeat(3, min-content);
+  grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end]; }
 
 h1 {
   font-size: 2.4em;
@@ -486,3 +491,18 @@ h6 {
     transform: translateY(-1.2rem) scale(1.03); }
   .footer__icon:hover .footer__icon--link {
     fill: whitesmoke; }
+
+.properties-section {
+  background-color: #f15f5f;
+  padding: 5rem;
+  grid-column: full-start / full-end;
+  display: grid;
+  grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end]; }
+
+.properties__aside {
+  background-color: #af9a7d;
+  grid-column: full-start / col-start; }
+
+.properties__main-section {
+  background-color: #D7D7D7;
+  grid-column: col-start / full-end; }
