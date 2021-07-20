@@ -442,11 +442,11 @@ h6 {
         margin: auto;
         margin-bottom: 2rem; } }
   .footer__icon {
-    width: 7rem;
-    height: 7rem;
+    width: 5rem;
+    height: 5rem;
     display: inline-block;
     transition: all .3s;
-    padding: 1.6rem;
+    padding: 1rem;
     background-color: whitesmoke;
     border-radius: 50%;
     margin-left: 1rem; }
@@ -473,7 +473,7 @@ h6 {
         fill: whitesmoke;
         background-color: transparent; } }
     .footer__icon--link {
-      width: 4rem;
+      width: 2rem;
       height: 3rem;
       fill: #101d2c; }
       @media only screen and (max-width: 31.25em) {
