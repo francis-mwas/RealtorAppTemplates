@@ -21,7 +21,7 @@ body {
   grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end]; }
   @media only screen and (max-width: 50em) {
     .container {
-      grid-template-rows: 30vh 60vh min-content min-content repeat(3, min-content); } }
+      grid-template-rows: 65vh 75vh min-content min-content repeat(3, min-content); } }
   @media only screen and (max-width: 37.5em) {
     .container {
       grid-template-rows: 45vh 60vh min-content min-content repeat(3, min-content); } }
@@ -425,9 +425,22 @@ h6 {
     font-size: 1.8rem;
     text-align: center;
     padding-bottom: 1rem; }
+    @media only screen and (max-width: 31.25em) {
+      .footer__header--text {
+        margin-right: 2rem; } }
   .footer__social--icons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     text-align: center;
     transition: all .3s; }
+    @media only screen and (max-width: 31.25em) {
+      .footer__social--icons {
+        grid-auto-flow: row;
+        display: block;
+        text-align: center;
+        padding: 2.3rem 12rem;
+        margin: auto;
+        margin-bottom: 2rem; } }
   .footer__icon {
     width: 7rem;
     height: 7rem;
@@ -439,17 +452,34 @@ h6 {
     margin-left: 1rem; }
     @media only screen and (max-width: 37.5em) {
       .footer__icon {
-        width: 8rem;
-        height: 8rem;
+        width: 6rem;
+        height: 6rem;
+        display: block;
+        text-align: center;
+        padding: 1.4rem;
+        margin-left: -5rem;
+        margin-right: 9rem;
+        margin-bottom: 2rem;
+        fill: whitesmoke; } }
+    @media only screen and (max-width: 31.25em) {
+      .footer__icon {
+        width: 2rem;
+        height: 2rem;
         display: block;
         text-align: center;
         padding: 2.3rem;
-        margin: auto;
-        margin-bottom: 2rem; } }
+        margin-right: 1rem 2rem;
+        margin-bottom: 2rem;
+        fill: whitesmoke;
+        background-color: transparent; } }
     .footer__icon--link {
       width: 4rem;
       height: 3rem;
       fill: #101d2c; }
+      @media only screen and (max-width: 31.25em) {
+        .footer__icon--link {
+          fill: whitesmoke;
+          margin-left: -4rem; } }
   .footer__icon:hover {
     background-color: #101d2c;
     color: whitesmoke;

@@ -29,7 +29,7 @@ $font-color-1: whitesmoke;
 
 // media queries break points 
 $bp-medium: 50em; // 800px;
-$bp-below-700: 43.75em; //
+$bp-below-700: 43.75em; //700px
 $bp-small: 37.5em; // 600px;;
 $bp-smallest: 31.25em; // 500px
 
@@ -68,7 +68,7 @@ body {
     grid-template-columns: [full-start] 1fr [center-start]repeat(8, [col-start]minmax(min-content, 14rem)[col-end])[center-end] 1fr[full-end];
 
     @media only screen and (max-width: $bp-medium) {
-        grid-template-rows: 30vh 60vh min-content min-content repeat(3, min-content);
+        grid-template-rows: 65vh 75vh min-content min-content repeat(3, min-content);
     }
 
     @media only screen and (max-width: $bp-small) {

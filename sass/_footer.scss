@@ -73,14 +73,31 @@
         font-size: 1.8rem;
         text-align: center;
         padding-bottom: 1rem;
+
+        @media only screen and (max-width: $bp-smallest) {
+            margin-right: 2rem;
+        }
     }
 
     &__social--icons {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
         text-align: center;
         transition: all .3s;
 
+        @media only screen and (max-width: $bp-smallest) {
+            grid-auto-flow: row;
+            display: block;
+            text-align: center;
+            padding: 2.3rem 12rem;
+            margin: auto;
+            margin-bottom: 2rem;
+
+        }
 
     }
+
+
 
     &__icon {
         width: 7rem;
@@ -93,19 +110,40 @@
         margin-left: 1rem;
 
         @media only screen and (max-width: $bp-small) {
-            width: 8rem;
-            height: 8rem;
+            width: 6rem;
+            height: 6rem;
+            display: block;
+            text-align: center;
+            padding: 1.4rem;
+            margin-left: -5rem;
+            margin-right: 9rem;
+            margin-bottom: 2rem;
+            fill: whitesmoke;
+        }
+
+
+        @media only screen and (max-width: $bp-smallest) {
+            width: 2rem;
+            height: 2rem;
             display: block;
             text-align: center;
             padding: 2.3rem;
-            margin: auto;
+            margin-right: 1rem 2rem;
             margin-bottom: 2rem;
+            fill: $font-color-1;
+            background-color: transparent;
+
         }
 
         &--link {
             width: 4rem;
             height: 3rem;
             fill: $color-secondary-1;
+
+            @media only screen and (max-width: $bp-smallest) {
+                fill: $font-color-1;
+                margin-left: -4rem;
+            }
         }
     }
 
@@ -118,4 +156,5 @@
     &__icon:hover &__icon--link {
         fill: $font-color-1;
     }
+
 }
