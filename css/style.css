@@ -498,11 +498,16 @@ h6 {
   grid-column: full-start / full-end;
   display: grid;
   grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end]; }
-
-.properties__aside {
-  background-color: #af9a7d;
-  grid-column: full-start / col-start; }
-
-.properties__main-section {
-  background-color: #D7D7D7;
-  grid-column: col-start / full-end; }
+  .properties-section__aside {
+    background-color: #af9a7d;
+    grid-column: full-start / 3;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 3rem; }
+  .properties-section__main-section {
+    background-color: #D7D7D7;
+    grid-column: 3 / full-end;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 3rem; }
