@@ -502,6 +502,7 @@ h6 {
     background-color: #af9a7d;
     grid-column: full-start / 3;
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 1fr);
     grid-gap: 3rem; }
   .properties-section__main-section {
