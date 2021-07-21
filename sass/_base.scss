@@ -63,7 +63,7 @@ body {
     display: grid;
 
 
-    grid-template-rows: 10vh 80vh min-content min-content repeat(3, min-content);
+    grid-template-rows: 10vh 100vh min-content min-content repeat(3, min-content);
     // grid-template-columns: 8rem 1fr repeat(8, minmax(min-content, 14rem)) 1fr;
     grid-template-columns: [full-start] 1fr [center-start]repeat(8, [col-start]minmax(min-content, 14rem)[col-end])[center-end] 1fr[full-end];
 
@@ -75,7 +75,13 @@ body {
         grid-template-rows: 45vh 60vh min-content min-content repeat(3, min-content);
     }
 
-    // @media only screen and (max-width: $bp-smallest) {
-    //     grid-template-rows: 42vh 60vh min-content min-content repeat(3, min-content);
-    // }
+}
+
+.properties-container {
+    display: grid;
+
+
+    grid-template-rows: 10vh 50vh min-content min-content repeat(3, min-content);
+    // grid-template-columns: 8rem 1fr repeat(8, minmax(min-content, 14rem)) 1fr;
+    grid-template-columns: [full-start] 1fr [center-start]repeat(8, [col-start]minmax(min-content, 14rem)[col-end])[center-end] 1fr[full-end];
 }

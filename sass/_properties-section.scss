@@ -1,0 +1,30 @@
+.properties-section {
+    background-color: $color-grey-dark-2;
+    padding: 5rem;
+
+    grid-column: full-start / full-end;
+
+    display: grid;
+    grid-template-columns: [full-start] 1fr [center-start]repeat(8, [col-start]minmax(min-content, 14rem)[col-end])[center-end] 1fr[full-end];
+
+
+    &__aside {
+        background-color: $color-primary-2;
+        grid-column: full-start / 3;
+
+        display: grid;
+        // grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-gap: 3rem;
+    }
+
+    &__main-section {
+        background-color: $color-grey-1;
+        grid-column: 3 / full-end;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-gap: 3rem;
+    }
+}
