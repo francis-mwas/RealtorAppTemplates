@@ -1,5 +1,5 @@
 .properties-section {
-    background-color: $color-grey-dark-2;
+    // background-color: $tertiary-color;
     padding: 5rem;
 
     grid-column: full-start / full-end;
@@ -9,13 +9,54 @@
 
 
     &__aside {
-        background-color: $color-primary-2;
+        // background-color: whitesmoke;
         grid-column: full-start / 3;
 
         display: grid;
-        // grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(6, 1fr);
-        grid-gap: 3rem;
+        justify-content: center;
+        // justify-items: center;
+        // grid-gap: 3rem;
+
+    }
+
+    .aside {
+        &__card {
+            border: .6px solid $color-grey-1;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__icon {
+            width: 5rem;
+            height: 5rem;
+            margin-bottom: 2rem;
+            margin-top: 1rem;
+            fill: $color-secondary;
+            transition: all .3s;
+        }
+
+        &__icon:hover {
+            transform: translateY(-1.01rem) scale(1.03);
+        }
+
+        &__text {
+            border: .6px solid $color-grey-1;
+            display: flex;
+            justify-content: center;
+
+            align-items: center;
+        }
+
+        &__text--head {
+            font-size: 1rem;
+            color: $color-secondary;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
     }
 
     &__main-section {
