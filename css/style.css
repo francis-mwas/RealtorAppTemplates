@@ -534,3 +534,5 @@ h6 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 1fr);
     grid-gap: 3rem; }
+  .properties-section__card-content {
+    background-color: black; }

@@ -68,4 +68,11 @@
         grid-template-rows: repeat(6, 1fr);
         grid-gap: 3rem;
     }
+
+    &__card-content {
+        background-color: black;
+
+
+        &--img {}
+    }
 }
