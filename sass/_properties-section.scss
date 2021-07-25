@@ -6,6 +6,7 @@
 
     display: grid;
     grid-template-columns: [full-start] 1fr [center-start]repeat(8, [col-start]minmax(min-content, 14rem)[col-end])[center-end] 1fr[full-end];
+    grid-column-gap: 2rem;
 
 
     &__aside {
@@ -17,7 +18,7 @@
         grid-template-rows: repeat(6, 1fr);
         justify-content: center;
         // justify-items: center;
-        // grid-gap: 3rem;
+        // grid-column-gap: 3rem;
 
     }
 
@@ -60,19 +61,35 @@
     }
 
     &__main-section {
-        background-color: $color-grey-1;
+        // background-color: $color-grey-1;
         grid-column: 3 / full-end;
 
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-        grid-gap: 3rem;
+        grid-template-columns: 40rem minmax(28rem, 1fr);
+        // grid-template-rows: repeat(auto-fit, minmax(28rem, 1fr));
+        grid-column-gap: 2rem;
+        grid-row-gap: 1rem;
     }
 
     &__card-content {
         background-color: black;
 
+        &--img {
+            width: 100%;
+        }
+    }
+}
 
-        &--img {}
+.card-content {
+
+    &__title {
+        font-size: 1.8rem;
+        text-transform: capitalize;
+        color: $color-secondary;
+    }
+    &__text{
+        margin-top: 2rem;
+        font-size: 1.4rem;
+        text-shadow: 1em;
     }
 }
