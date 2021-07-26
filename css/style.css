@@ -506,7 +506,7 @@ h6 {
   .properties-section__aside {
     grid-column: full-start / 3;
     display: grid;
-    grid-template-columns: repeat(2, minmax(10rem, 1fr));
+    grid-template-columns: repeat(2, minmax(13rem, 1fr));
     grid-template-rows: repeat(6, min-content);
     justify-content: center; }
   .properties-section .aside__card {

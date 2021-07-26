@@ -20,7 +20,7 @@
 
 
         display: grid;
-        grid-template-columns: repeat(2, minmax(10rem, 1fr));
+        grid-template-columns: repeat(2, minmax(13rem, 1fr));
         grid-template-rows: repeat(6, min-content);
         justify-content: center;
     }
