@@ -10,9 +10,9 @@ html {
   font-size: 62.5%; }
 
 body {
+  font-family: "Nunito", sans-serif;
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  /*font-size: 16px;*/
   line-height: 1.7; }
 
 .container {
@@ -134,6 +134,20 @@ h6 {
       .banner__hero {
         padding: 3rem;
         margin-top: 8.4rem; } }
+    .banner__hero__hero-listing {
+      background-color: rgba(238, 133, 133, 0.4);
+      grid-column: 4 / 8;
+      grid-row: 4 / 6;
+      padding: 2rem 1rem;
+      text-align: center;
+      text-transform: capitalize;
+      letter-spacing: .3rem;
+      color: whitesmoke;
+      transition: all .3s; }
+      @media only screen and (max-width: 37.5em) {
+        .banner__hero__hero-listing {
+          padding: 3rem;
+          margin-top: 8.4rem; } }
   .banner__text {
     font-size: 2.2rem;
     margin-bottom: 1.2rem;
@@ -157,9 +171,32 @@ h6 {
     @media only screen and (max-width: 37.5em) {
       .banner__btn {
         font-size: 1.2rem; } }
+  .banner__btn-listing {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: .5rem .9rem;
+    border: 3px solid #af9a7d;
+    display: inline-block;
+    font-size: 1.8rem;
+    color: #550202;
+    background: #f9f7f6;
+    transition: all .3s; }
+    @media only screen and (max-width: 37.5em) {
+      .banner__btn-listing {
+        font-size: 1.2rem; } }
   .banner__btn:hover {
     background: transparent;
     color: whitesmoke; }
+
+.banner-listing {
+  background-image: url(../img/apart-8.jpg);
+  background-size: cover;
+  background-position: center;
+  grid-column: full-start / full-end;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  align-items: center; }
 
 .services {
   grid-column: center-start / center-end;
@@ -383,7 +420,7 @@ h6 {
 
 .footer {
   background-color: #101d2c;
-  padding: 5rem;
+  padding-top: 5rem;
   grid-column: full-start / full-end;
   display: grid;
   grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end];
@@ -492,16 +529,24 @@ h6 {
   .footer__icon:hover .footer__icon--link {
     fill: whitesmoke; }
 
+.card-content__price, .card-content__size, .card-content__rooms, .card-content__beds, .card-content__location {
+  display: flex;
+  align-items: center; }
+  .card-content__price p, .card-content__size p, .card-content__rooms p, .card-content__beds p, .card-content__location p {
+    font-size: 1.2rem;
+    font-weight: 400; }
+
 .properties-section {
   padding: 5rem;
   grid-column: full-start / full-end;
   display: grid;
-  grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end]; }
+  grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end];
+  grid-column-gap: 2rem; }
   .properties-section__aside {
     grid-column: full-start / 3;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(2, minmax(13rem, 1fr));
+    grid-template-rows: repeat(6, min-content);
     justify-content: center; }
   .properties-section .aside__card {
     border: 0.6px solid #D7D7D7;
@@ -528,9 +573,53 @@ h6 {
     font-weight: 700;
     text-transform: uppercase; }
   .properties-section__main-section {
-    background-color: #D7D7D7;
-    grid-column: 3 / full-end;
+    grid-column: 3 / full-end; }
+  .properties-section__card-content {
+    box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.12), 0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.08);
+    margin-bottom: 1rem;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    grid-gap: 3rem; }
+    grid-template-columns: 35rem minmax(28rem, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 3rem; }
+    .properties-section__card-content--img {
+      border-radius: .2rem;
+      width: 100%;
+      height: 100%; }
+
+.card-content__title-holder {
+  display: flex;
+  justify-content: space-between;
+  margin-top: .5rem; }
+
+.card-content__title {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  color: #990606; }
+  .card-content__title--link:link, .card-content__title--link:visited {
+    color: #990606; }
+
+.card-content__title a {
+  text-decoration: none; }
+
+.card-content__text {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  text-shadow: 1em; }
+  .card-content__text--inner {
+    display: grid;
+    margin-top: 3.4rem;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    grid-row-gap: 3.5rem; }
+
+.listing__icon {
+  width: 2rem;
+  height: 2rem;
+  fill: #990606;
+  margin-right: 1rem; }
+
+.favourite__icon {
+  width: 2rem;
+  height: 2rem;
+  fill: #e97451;
+  margin-right: 4rem; }
