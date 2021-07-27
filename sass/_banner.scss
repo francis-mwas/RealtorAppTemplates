@@ -30,7 +30,7 @@
 
         //to be made dynamic
         &__hero-listing {
-            background-color: rgba($color-grey-light-2, .4);
+            background-color: rgba($color-grey-dark-1, .4);
             grid-column: 4 / 8;
             grid-row: 4 / 6;
             padding: 2rem 1rem;
@@ -85,11 +85,11 @@
         text-transform: uppercase;
         text-decoration: none;
         padding: .5rem .9rem;
-        border: 3px solid $color-secondary;
+        border: 3px solid $color-primary-2;
         display: inline-block;
         font-size: 1.8rem;
-        color: currentColor;
-        background: $color-secondary;
+        color: $color-primary-dark;
+        background: $tertiary-color;
         transition: all .3s;
 
         @media only screen and (max-width: $bp-small) {
