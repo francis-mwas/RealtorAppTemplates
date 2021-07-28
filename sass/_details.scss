@@ -1,5 +1,31 @@
-.details {
-    &__heading {
-        font-size: 3rem !important;
+.single-property {
+
+
+    &__details {
+        background-color: $color-grey-light-1;
+        padding: 4rem;
+        grid-column: center-start / center-end;
+
+
+        display: grid;
+        grid-template-rows: 40vh min-content min-content;
+        grid-template-columns: repeat(12, 1fr);
     }
+
+    &__images {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template: repeat(7, 5vw) / repeat(8, 1fr);
+        // grid-template-rows: repeat(8, 1fr);
+        grid-gap: 1.5rem;
+    }
+
+    &__image {
+        &--1{
+            grid-column: 1 / 4;
+            grid-row: 1 / 3;
+        }
+    }
+
+
 }
