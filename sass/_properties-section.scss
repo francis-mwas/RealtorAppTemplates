@@ -82,6 +82,8 @@
         grid-template-columns: 35rem minmax(28rem, 1fr);
         grid-column-gap: 2rem;
         grid-row-gap: 3rem;
+        border-radius: .4rem;
+        overflow: hidden;
 
         &--img {
             border-radius: .2rem;

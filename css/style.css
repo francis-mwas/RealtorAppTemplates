@@ -580,7 +580,9 @@ h6 {
     display: grid;
     grid-template-columns: 35rem minmax(28rem, 1fr);
     grid-column-gap: 2rem;
-    grid-row-gap: 3rem; }
+    grid-row-gap: 3rem;
+    border-radius: .4rem;
+    overflow: hidden; }
     .properties-section__card-content--img {
       border-radius: .2rem;
       width: 100%;
@@ -623,3 +625,6 @@ h6 {
   height: 2rem;
   fill: #e97451;
   margin-right: 4rem; }
+
+.details__heading {
+  font-size: 2rem; }
