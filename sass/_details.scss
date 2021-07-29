@@ -5,8 +5,13 @@
 
     &__gallery {
         display: grid;
-        grid-template: repeat(7, 4vw) / repeat(11, 1fr);
+        grid-template: repeat(5, 4vw) / repeat(11, 1fr);
         grid-gap: 1.2rem;
+    }
+
+    &__header {
+        padding: 2rem;
+        margin-bottom: 2rem;
     }
 
 
@@ -43,5 +48,62 @@
         height: 100%;
         border-radius: 4px;
         object-fit: cover;
+    }
+
+    &__icons-link {
+        margin: 1.4rem;
+        width: 3rem;
+        height: 3rem;
+
+        &--fb {
+            fill: #1877F2;
+        }
+
+        &--whatsapp {
+            fill: #1DD03F;
+        }
+
+        &--twitter {
+            fill: #1DA1F2;
+        }
+
+        &--insta {
+            fill: #dc2;
+        }
+
+        &--linkedin {
+            fill: #0A66C2;
+        }
+    }
+
+    &__link-item {
+        text-decoration: none;
+    }
+}
+
+.header {
+    &__title {
+        margin-bottom: 1.4rem;
+    }
+
+    &__heading {
+        font-size: 2.8rem;
+        letter-spacing: .3rem;
+        font-weight: 400;
+    }
+
+    &__share {
+        display: flex;
+        justify-content: space-between;
+
+        font-size: 1.3rem;
+        font-weight: 700;
+
+        h4 {
+            font-size: 1.7rem;
+            // color:#717171;
+            // color: #b0b0b0;
+            color: $color-grey-light-2;
+        }
     }
 }
