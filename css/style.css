@@ -56,7 +56,7 @@ h6 {
   margin-bottom: 1.5em; }
 
 .header {
-  background-color: rgba(238, 133, 133, 0.1);
+  background-color: #f9f7f6;
   z-index: 100;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   grid-column: full-start / full-end;
@@ -98,7 +98,7 @@ h6 {
         grid-column: 3 / -1;
         grid-auto-flow: row; } }
     .header__nav--link:link, .header__nav--link:visited {
-      color: #af9a7d;
+      color: #990606;
       text-decoration: none; }
     .header__nav--link-1:active {
       background-color: #ee8585; }
@@ -172,7 +172,7 @@ h6 {
     display: inline-block;
     font-size: 1.8rem;
     color: currentColor;
-    background: #ee8585;
+    background: #990606;
     transition: all .3s; }
     @media only screen and (max-width: 37.5em) {
       .banner__btn {
@@ -707,7 +707,8 @@ h6 {
   margin-bottom: 4rem;
   grid-column: center-start / center-end;
   display: grid;
-  grid-template-columns: 60vw 1fr; }
+  grid-template-columns: 54vw 1fr;
+  grid-gap: 1.5rem; }
   .property-details__content-details--title {
     font-size: 2.8rem;
     letter-spacing: .3rem;
@@ -745,14 +746,25 @@ h6 {
   .property-details__side {
     padding-top: 2rem; }
     .property-details__side-content {
+      background-color: #f9f7f6;
       display: grid;
-      grid-template-columns: minmax(6rem, 1fr) 1fr;
+      grid-template-columns: minmax(3rem, 1fr) 1fr;
       grid-gap: 1rem;
-      box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.12), 0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.08); }
+      margin-bottom: 1.5rem; }
     .property-details__side--text-content {
       display: flex;
       flex-direction: column;
-      justify-content: space-between; }
+      justify-content: space-between;
+      margin: 1rem; }
+    .property-details__side--title, .property-details__side--price, .property-details__side--location {
+      font-size: 1.5rem;
+      font-weight: 300; }
+    .property-details__side--icon {
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-left: -1rem;
+      margin-right: .3rem;
+      fill: #990606; }
   .property-details__side-image--item {
     display: block;
     object-fit: fill;

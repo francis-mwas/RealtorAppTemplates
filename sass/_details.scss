@@ -118,8 +118,8 @@
     margin-bottom: 4rem;
     grid-column: center-start / center-end;
     display: grid;
-    grid-template-columns: 60vw 1fr;
-    // grid-gap: 1rem;
+    grid-template-columns: 54vw 1fr;
+    grid-gap: 1.5rem;
 
     &__content-details {
         &--title {
@@ -176,21 +176,40 @@
     }
 
     &__side {
-        // background-color: orangered;
+        // background-color: $tertiary-color;
         padding-top: 2rem;
+        // box-shadow: 0 .4rem .8rem 0 rgba(0, 0, 0, .12),
+        //     0 .2rem .4rem 0 rgba(0, 0, 0, .08);
 
         &-content {
+            background-color: $tertiary-color;
             display: grid;
-            grid-template-columns: minmax(6rem, 1fr) 1fr;
+            grid-template-columns: minmax(3rem, 1fr) 1fr;
             grid-gap: 1rem;
-            box-shadow: 0 .4rem .8rem 0 rgba(0, 0, 0, .12),
-                0 .2rem .4rem 0 rgba(0, 0, 0, .08);
+            margin-bottom: 1.5rem;
+
         }
 
         &--text-content {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            margin: 1rem;
+        }
+
+        &--title,
+        &--price,
+        &--location {
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+
+        &--icon {
+            width: 1.5rem;
+            height: 1.5rem;
+            margin-left: -1rem;
+            margin-right: .3rem;
+            fill: #990606;
         }
     }
 
