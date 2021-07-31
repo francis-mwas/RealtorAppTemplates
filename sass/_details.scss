@@ -94,7 +94,7 @@
     &__heading {
         font-size: 2.8rem;
         letter-spacing: .3rem;
-        font-weight: 400;
+        font-weight: $default-font-weight;
     }
 
     &__share {
@@ -106,8 +106,7 @@
 
         h4 {
             font-size: 1.7rem;
-            // color:#717171;
-            // color: #b0b0b0;
+            font-weight: $default-font-weight;
             color: $color-grey-light-2;
         }
     }
@@ -126,7 +125,7 @@
         &--title {
             font-size: 2.8rem;
             letter-spacing: .3rem;
-            font-weight: 400;
+            font-weight: $default-font-weight;
             margin-bottom: 3rem;
             color: $color-secondary;
         }
@@ -134,7 +133,7 @@
         &--desc-title {
             font-size: 2rem;
             letter-spacing: .3rem;
-            font-weight: 400;
+            font-weight: $default-font-weight;
             margin-bottom: 3rem;
             color: $color-secondary;
         }
@@ -147,17 +146,65 @@
     }
 
     &__text {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         margin-bottom: 3rem;
+        line-height: 1.8em;
+        font-weight: $default-font-weight;
     }
 
     &__amenities {
-        &__amenities-list {
+        &-list {
             list-style: none;
+            font-size: 1.8rem;
+            margin-left: 2.2rem;
+
 
             &--item {
-                font-size: 3rem;
+                font-weight: $default-font-weight;
             }
+
+            &--item::before {
+                content: "▪";
+                color: $color-grey-light-1;
+                font-weight: bold;
+                display: inline-block;
+                width: 1em;
+                margin-left: -1em;
+            }
+        }
+
+    }
+
+    &__side {
+        // background-color: orangered;
+        padding-top: 2rem;
+
+        &-content {
+            display: grid;
+            grid-template-columns: minmax(6rem, 1fr) 1fr;
+            grid-gap: 1rem;
+            box-shadow: 0 .4rem .8rem 0 rgba(0, 0, 0, .12),
+                0 .2rem .4rem 0 rgba(0, 0, 0, .08);
+        }
+
+        &--text-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+
+    &__side-image {
+        &--item {
+            display: block;
+            object-fit: fill;
+            width: 100%;
+            height: 100%;
+        }
+
+        &--item:hover {
+            opacity: 0.9;
+            filter: brightness(50%);
         }
     }
 }
@@ -168,10 +215,12 @@
         height: 4rem;
         fill: #990606;
         margin-right: 1rem;
+
     }
 
     &__icon--text {
         font-size: 1.4rem;
         margin-bottom: 3rem;
+        font-weight: $default-font-weight;
     }
 }
