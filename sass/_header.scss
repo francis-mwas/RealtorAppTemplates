@@ -1,5 +1,6 @@
 .header {
-    background-color: rgba($color-grey-dark-1, .1);
+    background-color: $tertiary-color;
+    // background-color: rgba($color-grey-dark-1, .1);
     z-index: 100;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     grid-column: full-start / full-end;
@@ -60,7 +61,7 @@
 
         &--link:link,
         &--link:visited {
-            color: $color-primary-2;
+            color: $color-secondary;
             text-decoration: none;
         }
 
